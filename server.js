@@ -6,6 +6,6 @@ const typeDefs = gql(fs.readFileSync('./graphql/typeDefs.graphql',{encoding:'utf
 
 const server = new ApolloServer({typeDefs,resolvers });
 
-server.listen(5000).then(({ url }) => {	
+server.listen(4000).then(({ url }) => {	
    console.log("Server ready at " +   url );     
    })
