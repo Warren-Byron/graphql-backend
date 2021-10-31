@@ -21,6 +21,4 @@ type Country {
 
 type Metadata {
     hostname:String
-    mac:String
-    profile:String
 }

@@ -18,8 +18,8 @@ const Query = {
         return doc.data;
     },
     getMetadata: async() => {
-        const response = await fetch(`http://169.254.169.254/latest/meta-data/`)
-        const doc = await response.json();
+        const response = await fetch(`http://169.254.169.254/latest/meta-data/hostname`)
+        const doc = await response;
         return doc.data;
     }
 }
