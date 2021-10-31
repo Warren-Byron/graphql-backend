@@ -20,7 +20,7 @@ const Query = {
     getMetadata: async() => {
         const response = await fetch(`http://169.254.169.254/latest/dynamic/instance-identity/document`)
         const doc = await response.json();
-        return doc.data;
+        return doc;
     }
 }
 
