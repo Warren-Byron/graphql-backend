@@ -1,0 +1,19 @@
+type Query {
+    getEmployee: [Employee]
+    getCountry: Country
+}
+
+type Employee {
+    emp_no:ID,
+    first_name:String,
+    last_name:String,
+    birth_date:String,
+    hire_date:String,
+    gender:String,
+    country:Country
+}
+
+type Country {
+    countryName: String,
+    countryCode: String
+}
