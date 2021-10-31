@@ -1,6 +1,7 @@
 type Query {
     getEmployee: [Employee]
     getCountry: Country
+    getMetadata: Metadata
 }
 
 type Employee {
@@ -16,4 +17,8 @@ type Employee {
 type Country {
     countryName: String,
     countryCode: String
+}
+
+type Metadata {
+
 }

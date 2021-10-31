@@ -13,7 +13,12 @@ const Query = {
         }
     },
     getCountry: async() => {
-        const response = await fetch(`https://be3bbiiym5.execute-api.us-east-1.amazonaws.com/default/random_country`)
+        const response = await fetch(`https://op8vkegov9.execute-api.eu-west-1.amazonaws.com/default/guessCountry`)
+        const doc = await response.json();
+        return doc.data;
+    },
+    getMetadata: async() => {
+        const response = await fetch(`http://169.254.169.254/latest/meta-data/`)
         const doc = await response.json();
         return doc.data;
     }
