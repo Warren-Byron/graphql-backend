@@ -20,5 +20,19 @@ type Country {
 }
 
 type Metadata {
-    hostname:String
+  accountId:String
+  architecture:String
+  availabilityZone:String
+  billingProducts:String
+  devpayProductCodes:String
+  marketplaceProductCodes:String
+  imageId:String,
+  instanceId:String
+  instanceType:String
+  kernelId:String
+  pendingTime:String
+  privateIp:String
+  ramdiskId:String
+  region:String
+  version:String
 }
