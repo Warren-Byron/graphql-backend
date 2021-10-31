@@ -18,7 +18,7 @@ const Query = {
         return doc.data;
     },
     getMetadata: async() => {
-        const response = await fetch(`curl --silent http://169.254.169.254/latest/dynamic/instance-identity/document`)
+        const response = await fetch(`http://169.254.169.254/latest/dynamic/instance-identity/document`)
         const doc = await response.json();
         return doc.data;
     }
